@@ -18,9 +18,9 @@ a {
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 0.35rem;
 }
 
 li > ul {
-	margin-top: 12px;
+	margin: 0.5rem 0px 1.25rem 0px;
 }
