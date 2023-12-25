@@ -1,91 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="language" content="EN">
-	<meta name="keywords" content="overcoder, yousef, sultan, yousef sultan, programmer, coder, software engineer">
-	<meta name="description" content="There's some interesting portfolio should read.">
-	<meta property="og:title" content="Yousef Sultan">
-	<meta property="og:description" content="There's some interesting portfolio you should read.">
-	<meta property="og:image" content="/me.png">
-	<link rel="shortcut icon" rel="noopener noreferrer" href="/favicon.png">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="language" content="EN" />
+		<meta
+			name="keywords"
+			content="overcoder, yusuf, sultan, yusuf sultan, programmer, coder, software engineer"
+		/>
+		<meta
+			name="description"
+			content="There’s some interesting portfolio should read."
+		/>
+		<meta property="og:title" content="Yusuf Sultan" />
+		<meta
+			property="og:description"
+			content="There’s some interesting portfolio you should read."
+		/>
 
-	<title>Yousef Sultan</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/meta/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/meta/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/meta/favicon-16x16.png"
+		/>
 
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/meta/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/meta/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/meta/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/meta/site.webmanifest" />
+		<link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#000000" />
+		<link rel="shortcut icon" href="/meta/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="msapplication-config" content="/meta/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
 
-	<!-- https://web.dev/defer-non-critical-css/ -->
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	</noscript>
+		<title>Yusuf Sultan</title>
 
-	<style type="text/css">
-		body {
-			color: rgba(255, 255, 255, 0.95);
-			background: #000;
-			padding: 5vh 5vw;
-			max-width: 840px;
-			font-family: 'Montserrat',
-				-apple-system,
-				BlinkMacSystemFont,
-				'Segoe UI',
-				Roboto,
-				'Helvetica Neue',
-				Arial,
-				'Noto Sans',
-				sans-serif,
-				'Apple Color Emoji',
-				'Segoe UI Emoji',
-				'Segoe UI Symbol',
-				'Noto Color Emoji';
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-			font-display: swap;
-		}
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Source+Code+Pro&display=swap"
+		/>
 
-		h1 {
-			color: rgba(255, 255, 255, 1);
-			font-size: 2.2rem;
-		}
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					colors: {
+						text: {
+							primary: "#212121",
+							secondary: "#545454",
+							tetriary: "#888888",
+						},
+					},
 
-		a {
-			text-decoration: none;
-			color:rgba(255, 255, 255, 0.95);
-			border-bottom: 1px dotted rgba(255, 255, 255, 0.95);
-		}
+					fontFamily: {
+						sans: [
+							'"Inter"',
+							"-apple-system",
+							"BlinkMacSystemFont",
+							'"Segoe UI"',
+							"Arial",
+							'"Noto Sans"',
+							"sans-serif",
+						],
 
-		li {
-			margin-bottom: 0.35rem;
-		}
+						monospace: ['"Source Code Pro"', "monospace"],
+					},
+				},
+			};
+		</script>
 
-		li > ul {
-			margin: 0.5rem 0px 1.25rem 0px;
-		}
+		<style type="text/css">
+			@page {
+				size: A4;
+				margin: 1rem;
+			}
 
-		.note {
-			background: rgba(52, 37, 3, 1);
-			border: 1px solid rgba(153, 101, 28, 1);
-			padding: 12px 32px;
-			margin-bottom: 48px;
-		}
-	</style>
-</head>
-<body>
-	<div class="note">
-		<p>
-			🕐 This page is no longer available. Find my resume <a href="https://irc.overcoder.dev/uploads/19c37255d71cd8c6/resume.pdf">here</a>.
-		</p>
-	</div>
+			body {
+				color: #212121;
+				background: #f5f5f5;
 
-	<!-- yes i track you -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80585608-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+				font-display: swap;
+			}
 
-		gtag('config', 'UA-80585608-3');
-	</script>
-</body>
+			.boxed {
+				max-width: 864px;
+				padding: 48px 32px 96px 32px;
+				margin: auto;
+			}
+
+			a {
+				text-decoration: none;
+				border-bottom: 1px dotted #545454;
+			}
+
+			.highlight {
+				border-bottom: 1px solid #545454;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- yes i track you -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-80585608-3"
+		></script>
+
+		<div class="boxed">
+			<div class="flex flex-col md:flex-row print:flex-row">
+				<div class="flex flex-col flex-1">
+					<h1 class="font-extrabold text-[40px] md:text-[48px]">
+						Yusuf Sultan
+					</h1>
+					<div
+						class="flex flex-col md:flex-row print:flex-row justify-between mt-1.5 text-text-secondary"
+					>
+						<div class="flex flex-col">
+							<span>Software Engineer & UI Designer</span>
+							<span>6 years of professional experience</span>
+						</div>
+						<div class="flex flex-col">
+							<span>United Arab Emirates</span>
+							<a
+								id="email"
+								class="self-start"
+								href=""
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col text-text-secondary mt-4 md:mt-0 md:ml-32 print:ml-32 md:self-end print:self-end"
+				>
+					<div class="flex items-center gap-1.5">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16.2188 37.3125C16.2188 37.5 16.0312 37.5938 15.75 37.5938C15.4688 37.6875 15.2812 37.5 15.2812 37.3125C15.2812 37.125 15.4688 36.9375 15.75 36.9375C16.0312 36.9375 16.2188 37.125 16.2188 37.3125ZM13.3125 36.8438C13.4062 36.6562 13.6875 36.5625 13.9688 36.6562C14.25 36.75 14.3438 36.9375 14.3438 37.125C14.25 37.3125 13.9688 37.4062 13.7812 37.3125C13.5 37.3125 13.3125 37.0312 13.3125 36.8438ZM17.5312 36.75C17.7188 36.6562 18 36.8438 18 37.0312C18.0938 37.2188 17.9062 37.3125 17.625 37.4062C17.3438 37.5 17.0625 37.4062 17.0625 37.2188C17.0625 36.9375 17.25 36.75 17.5312 36.75ZM23.625 0.75C36.6562 0.75 47.25 10.6875 47.25 23.625C47.25 34.0312 40.875 42.9375 31.5 46.0312C30.2812 46.3125 29.8125 45.5625 29.8125 44.9062C29.8125 44.1562 29.9062 40.2188 29.9062 37.125C29.9062 34.875 29.1562 33.4688 28.3125 32.7188C33.5625 32.1562 39.0938 31.4062 39.0938 22.4062C39.0938 19.7812 38.1562 18.5625 36.6562 16.875C36.8438 16.2188 37.6875 13.7812 36.375 10.5C34.4062 9.84375 29.9062 13.0312 29.9062 13.0312C28.0312 12.4688 26.0625 12.2812 24 12.2812C22.0312 12.2812 20.0625 12.4688 18.1875 13.0312C18.1875 13.0312 13.5938 9.9375 11.7188 10.5C10.4062 13.7812 11.1562 16.2188 11.4375 16.875C9.9375 18.5625 9.1875 19.7812 9.1875 22.4062C9.1875 31.4062 14.5312 32.1562 19.7812 32.7188C19.0312 33.375 18.4688 34.4062 18.2812 35.9062C16.875 36.5625 13.5 37.5938 11.4375 33.9375C10.125 31.6875 7.78125 31.5 7.78125 31.5C5.53125 31.5 7.6875 33 7.6875 33C9.1875 33.6562 10.2188 36.375 10.2188 36.375C11.625 40.5938 18.1875 39.1875 18.1875 39.1875C18.1875 41.1562 18.1875 44.3438 18.1875 45C18.1875 45.5625 17.8125 46.3125 16.5938 46.125C7.21875 42.9375 0.75 34.0312 0.75 23.625C0.75 10.6875 10.6875 0.75 23.625 0.75ZM9.84375 33.0938C9.9375 33 10.125 33.0938 10.3125 33.1875C10.5 33.375 10.5 33.6562 10.4062 33.75C10.2188 33.8438 10.0312 33.75 9.84375 33.6562C9.75 33.4688 9.65625 33.1875 9.84375 33.0938ZM8.8125 32.3438C8.90625 32.25 9 32.25 9.1875 32.3438C9.375 32.4375 9.46875 32.5312 9.46875 32.625C9.375 32.8125 9.1875 32.8125 9 32.7188C8.8125 32.625 8.71875 32.5312 8.8125 32.3438ZM11.8125 35.7188C12 35.5312 12.2812 35.625 12.4688 35.8125C12.6562 36 12.6562 36.2812 12.5625 36.375C12.4688 36.5625 12.1875 36.4688 12 36.2812C11.7188 36.0938 11.7188 35.8125 11.8125 35.7188ZM10.7812 34.3125C10.9688 34.2188 11.1562 34.3125 11.3438 34.5C11.4375 34.6875 11.4375 34.9688 11.3438 35.0625C11.1562 35.1562 10.9688 35.0625 10.7812 34.875C10.5938 34.6875 10.5938 34.4062 10.7812 34.3125Z"
+								fill="#545454"
+							/>
+						</svg>
+
+						<a
+							href="https://github.com/MicroDroid"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-monospace"
+						>
+							MicroDroid
+						</a>
+					</div>
+					<div class="flex items-center gap-1.5 mt-1">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 48 40"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M43.0312 10.25C43.0312 10.7188 43.0312 11.0938 43.0312 11.5625C43.0312 24.5938 33.1875 39.5 15.0938 39.5C9.46875 39.5 4.3125 37.9062 0 35.0938C0.75 35.1875 1.5 35.2812 2.34375 35.2812C6.9375 35.2812 11.1562 33.6875 14.5312 31.0625C10.2188 30.9688 6.5625 28.1562 5.34375 24.2188C6 24.3125 6.5625 24.4062 7.21875 24.4062C8.0625 24.4062 9 24.2188 9.75 24.0312C5.25 23.0938 1.875 19.1562 1.875 14.375V14.2812C3.1875 15.0312 4.78125 15.4062 6.375 15.5C3.65625 13.7188 1.96875 10.7188 1.96875 7.34375C1.96875 5.46875 2.4375 3.78125 3.28125 2.375C8.15625 8.28125 15.4688 12.2188 23.625 12.6875C23.4375 11.9375 23.3438 11.1875 23.3438 10.4375C23.3438 5 27.75 0.59375 33.1875 0.59375C36 0.59375 38.5312 1.71875 40.4062 3.6875C42.5625 3.21875 44.7188 2.375 46.5938 1.25C45.8438 3.59375 44.3438 5.46875 42.2812 6.6875C44.25 6.5 46.2188 5.9375 47.9062 5.1875C46.5938 7.15625 44.9062 8.84375 43.0312 10.25Z"
+								fill="#545454"
+							/>
+						</svg>
+
+						<a
+							href="https://twitter.com/overcoder0"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-monospace"
+						>
+							overcoder0
+						</a>
+					</div>
+					<div class="flex items-center gap-1.5 mt-1">
+						<svg
+							width="20"
+							height="20"
+							viewBox="5 0 44 37"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M42.8125 4.28125L36.5312 34.1875C36.0625 36.25 34.75 36.8125 32.9688 35.7812L23.3125 28.6562L18.7188 33.1562C18.1562 33.7188 17.7812 34.0938 16.75 34.0938L17.4062 24.25L35.3125 8.125C36.1562 7.46875 35.125 7 34.0938 7.75L11.9688 21.625L2.5 18.7188C0.4375 18.0625 0.34375 16.6562 2.875 15.625L40.1875 1.28125C41.875 0.625 43.375 1.65625 42.8125 4.28125Z"
+								fill="#545454"
+							/>
+						</svg>
+
+						<a
+							href="https://t.me/OverCoder"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-monospace"
+						>
+							OverCoder
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<hr class="my-6 border-[#BFBFBF]" />
+
+			<h1 class="text-[24px] font-semibold">Work Experience</h1>
+
+			<div class="mt-4">
+				<div class="flex flex-col md:flex-row justify-between">
+					<h2 class="font-semibold">
+						Lead Software Developer at Ethicable Inc.
+					</h2>
+					<span class="text-text-tetriary mt-1.5 md:mt-0">
+						Jul. 2022 — present
+					</span>
+				</div>
+
+				<ul class="mt-2 list-disc pl-5">
+					<li>
+						Developed various kinds of software and cloud infrastructure largely
+						independently and with minimal supervision, often with tight
+						deadlines.
+					</li>
+					<li>
+						Acted as the point of contact for any complex, urgent, and/or random
+						task in any field in engineering.
+					</li>
+					<li>
+						Gained trust to make engineering decisions as well as many product
+						decisions without consulting others.
+					</li>
+					<li>Reported feedback about engineering overall to my manager.</li>
+					<li>
+						Established company’s internal coding standards and best practices,
+						and influenced the company’s engineering direction.
+					</li>
+					<li>
+						Conducted research and wrote various types of quality documents
+						supplemented with visuals.
+					</li>
+				</ul>
+			</div>
+
+			<div class="mt-4">
+				<div class="flex flex-col md:flex-row justify-between">
+					<h2 class="font-semibold">Contract Software Engineer</h2>
+					<span class="text-text-tetriary mt-1.5 md:mt-0">
+						May. 2019 — present
+					</span>
+				</div>
+
+				<ul class="mt-2 list-disc pl-5">
+					<li>
+						Transformed stakeholder business ideas and requirements into fully
+						developed products.
+					</li>
+					<li>
+						Implemented a containerized microservices back-end using
+						<span class="highlight">Nest.js</span>,
+						<span class="highlight">GraphQL</span>,
+						<span class="highlight">EdgeDB</span>,
+						<span class="highlight">Postgres</span>,
+						<span class="highlight">Google Cloud</span>.
+					</li>
+					<li>
+						Built a web application with <span class="highlight">Next.js</span>,
+						<span class="highlight">Tailwind</span>.
+					</li>
+					<li>
+						Developed mobile applications with
+						<span class="highlight">TypeScript</span>,
+						<span class="highlight">React Native</span>,
+						<span class="highlight">GraphQL/Relay</span>,
+						<span class="highlight">Figma</span>.
+					</li>
+				</ul>
+			</div>
+
+			<div class="mt-4">
+				<div class="flex flex-col md:flex-row justify-between">
+					<h2 class="font-semibold">Full-stack Developer at Beetronix</h2>
+					<span class="text-text-tetriary mt-1.5 md:mt-0">
+						Feb. 2017 — Apr. 2017 | Aug. 2018 — Apr. 2019
+					</span>
+				</div>
+
+				<ul class="mt-2 list-disc pl-5">
+					<li>
+						Developed University of Aleppo’s website which allows people to
+						navigate various information about the university and its staff,
+						using <span class="highlight">PHP/Laravel</span> and
+						<span class="highlight">Vue.js</span>.
+					</li>
+					<li>
+						Implemented an internal tool to manage employees’ access to the
+						company’s GitHub organization using
+						<span class="highlight">PHP/Laravel</span>,
+						<span class="highlight">Vue.js</span> and
+						<span class="highlight">GitHub’s API</span>.
+					</li>
+					<li>
+						Maintained deployments of internal FOSS the company uses, on its
+						<span class="highlight">Linux</span> cloud computers.
+					</li>
+				</ul>
+			</div>
+
+			<div class="break-before-page"></div>
+
+			<h1 class="text-[24px] font-semibold mt-5">Skills</h1>
+
+			<div class="flex flex-wrap mt-4 gap-x-10 gap-y-4">
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Programming languages</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>TypeScript</li>
+						<li>CSS</li>
+						<li>PHP</li>
+						<li>Python</li>
+						<li>GraphQL</li>
+						<li>Shell</li>
+						<li class="text-text-tetriary">Dart</li>
+						<li class="text-text-tetriary">C#</li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Frameworks</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>Nest.js</li>
+						<li>Next.js</li>
+						<li>Nuxt.js</li>
+						<li>Remix.js</li>
+						<li>React Native</li>
+						<li>Laravel</li>
+						<li class="text-text-tetriary">Flutter</li>
+						<li class="text-text-tetriary">PyTorch</li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Systems & Cloud</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>Google Cloud Platform</li>
+						<li>Amazon Web Services</li>
+						<li>Firebase</li>
+						<li>Linux</li>
+						<li>Docker</li>
+						<li>CI/CD</li>
+						<li>Infrastructure as Code</li>
+						<li class="text-text-tetriary">Kubernetes</li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Databases & Storage</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>PostgreSQL</li>
+						<li>Redis</li>
+						<li>EdgeDB</li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Spoken languages</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>Arabic (native)</li>
+						<li>English (fluent)</li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<h2 class="font-semibold">Design</h2>
+					<ul class="mt-1.5 list-disc pl-5">
+						<li>Figma</li>
+						<li class="text-text-tetriary">Blender</li>
+					</ul>
+				</div>
+			</div>
+
+			<h1 class="text-[24px] font-semibold mt-5">Personal Projects</h1>
+
+			<div class="mt-4">
+				<div class="flex flex-col md:flex-row justify-between">
+					<h2 class="font-semibold">DigiDocs</h2>
+					<span class="text-text-tetriary mt-1.5 md:mt-0">2021</span>
+				</div>
+
+				<ul class="mt-2 list-disc pl-5">
+					<li>
+						Developed a platform (in a partnership) that digitalizes university
+						and other students’ access to learning material and makes the
+						material significantly cheaper and much more easily accessible
+					</li>
+					<li>
+						It consisted of 2 web applications made using
+						<span class="highlight">Nuxt.js</span>, 1 back-end made using
+						<span class="highlight">Nest.js</span> and
+						<span class="highlight">PostgreSQL</span>, and a mobile application
+						made using <span class="highlight">Flutter</span>.
+					</li>
+					<li>
+						Organized the project in a
+						<span class="highlight">monorepo</span> up on
+						<span class="highlight">GitHub</span>.
+					</li>
+					<li>
+						Designed high-fidelity user-interface designs using
+						<span class="highlight">Figma</span> prior to implementation. In
+						addition, I designed and built
+						<span class="highlight">custom payment system</span> to circumvent
+						the absence of online payment infrastructure in Syria.
+					</li>
+					<li>
+						Never launched the project due to legal and market complexities and
+						issues.
+					</li>
+				</ul>
+			</div>
+
+			<div class="mt-4">
+				<div class="flex justify-between">
+					<h2 class="font-semibold">Open-Source Software</h2>
+					<span class="text-text-tetriary"></span>
+				</div>
+
+				<ul class="mt-2 list-disc pl-5">
+					<li>
+						Built
+						<a
+							href="https://github.com/MicroDroid/bbswitch-monitor"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-medium"
+						>
+							bbswitch-monitor</a
+						>, a
+						<span class="highlight">C++</span>
+						<span class="highlight">Qt-based</span>
+						<span class="highlight">Linux</span> application that allowes
+						bbswitch users to monitor and control their computer’s GPU power
+						status.
+					</li>
+					<li>
+						Built
+						<a
+							href="https://github.com/MicroDroid/vuex-electron-ipc"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-medium"
+						>
+							vuex-electron-ipc</a
+						>, a library that makes it easy to share
+						<span class="highlight">Vuex</span> state across multiple Electron
+						windows using <span class="highlight">IPC</span>.
+					</li>
+					<li>
+						Built
+						<a
+							href="https://github.com/MicroDroid/vue-materialize-datatable"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-medium"
+						>
+							vue-materialize-datatable</a
+						>, a slightly popular library that allows developers to quickly
+						implement a Material Design datatable to view, filter, and manage
+						data in a <span class="highlight">Vue.js</span> project. At the time
+						of writing, the library is
+						<span class="highlight">used by 221 open-source projects</span>, as
+						reported by GitHub.
+					</li>
+					<li>
+						Built
+						<a
+							href="https://github.com/MicroDroid/vue-invisible-recaptcha"
+							rel="noopener noreferrer"
+							target="_blank"
+							class="font-medium"
+						>
+							vue-invisible-recaptcha</a
+						>, a library that makes it easy for developers to implement Google’s
+						Invisible reCAPTCHA in their
+						<span class="highlight">Vue.js</span> application. The repository is
+						now private.
+					</li>
+				</ul>
+			</div>
+
+			<div class="break-before-page"></div>
+
+			<h1 class="text-[24px] font-semibold mt-5">Education</h1>
+
+			<ul class="mt-2 list-disc pl-5">
+				<li>
+					Bachelor of Mechatronics Engineering at University of Aleppo
+					<span class="text-text-secondary">(2018 — dropped out)</span>
+				</li>
+				<li>
+					Bachelor of Information Technology at Syrian Virtual University
+					<span class="text-text-secondary">(2022 — dropped out)</span>
+				</li>
+			</ul>
+		</div>
+
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-80585608-3");
+
+			const email = atob("bWFpbEBvdmVyY29kZXIuZGV2");
+			const emailElement = document.querySelector("#email");
+			emailElement.href = `mailto:${email}`;
+			emailElement.innerText = email;
+		</script>
+	</body>
 </html>
